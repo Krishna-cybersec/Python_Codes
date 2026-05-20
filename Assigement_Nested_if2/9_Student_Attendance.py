@@ -1,0 +1,30 @@
+'''9_Student_Attendance.py
+
+A college determines whether a student is eligible to sit for exams based on attendance percentage:
+
+* 75% and above → Eligible
+* 60% to 74% → Eligible with warning
+* Below 60% → Not eligible
+
+Write a Python program to check eligibility.
+
+Input:
+Enter attendance percentage: 58
+
+Output:
+Status: Not Eligible
+'''
+
+perc = int(input("Enter attendance percentage: "))
+
+if perc >= 75:
+
+	print("Status : Eligible")
+
+elif perc >60 and perc <74:
+
+	print("Satus : Eligible with warning")
+
+else:
+
+	print("Not eligible")

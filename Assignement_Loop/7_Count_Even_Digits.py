@@ -1,0 +1,23 @@
+'''7_Count_Even_Digits.py
+A data analyst is analyzing numeric IDs and needs to determine how many digits in the ID are even.
+Write a program to **count the number of even digits in a given number using loops**.
+
+Input: 123456
+Output: Even digits count = 3
+
+---
+'''
+
+n =int(input("N = "))
+
+sum = 0
+
+while n>0:
+	rem = n%10
+
+	if rem %2==0:
+		sum+=1
+
+	n = n//10
+
+print("Even digits count",sum)
